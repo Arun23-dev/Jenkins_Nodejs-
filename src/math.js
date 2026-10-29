@@ -9,7 +9,7 @@ function subtract(a, b) {
 function multiply(a, b) {
     return a * b;
 }
-function cube(a,b){
+function power(a,b){
     return a^b;
 }
 
@@ -26,5 +26,5 @@ module.exports = {
     subtract,
     calculateDiscount,
     multiply,
-    cube
+    power
 };

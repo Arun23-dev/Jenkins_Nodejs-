@@ -1,5 +1,5 @@
 const express = require("express");
-const { add, multiply,cube } = require("./math");
+const { add, multiply,power } = require("./math");
 
 const app = express();
 
@@ -40,7 +40,7 @@ app.get("/api/multiply", (req, res) => {
         result:  multiply(a, b)
     });
 });
-app.get("/api/cube", (req, res) => {
+app.get("/api/power", (req, res) => {
     const a = Number(req.query.a);
     const b = Number(req.query.b);
 
@@ -51,7 +51,7 @@ app.get("/api/cube", (req, res) => {
     }
 
     return res.json({
-        result:  cube(a, b)
+        result:  power(a, b)
     });
 });
 
