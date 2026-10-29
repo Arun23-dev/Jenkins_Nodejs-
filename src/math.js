@@ -10,7 +10,7 @@ function multiply(a, b) {
     return a * b;
 }
 function power(a,b){
-    return a^b;
+    return a**b;
 }
 
 function calculateDiscount(price, percentage) {
