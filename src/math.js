@@ -9,6 +9,9 @@ function subtract(a, b) {
 function multiply(a, b) {
     return a * b;
 }
+function power(a,b){
+    return a^b;
+}
 
 function calculateDiscount(price, percentage) {
     if (price < 0 || percentage < 0 || percentage > 100) {
@@ -22,5 +25,6 @@ module.exports = {
     add,
     subtract,
     calculateDiscount,
-    multiply
+    multiply,
+    power
 };
